@@ -1,0 +1,134 @@
+#top {
+	width: 100%;
+	margin: 0 auto;
+	overflow: hidden;
+	background: url(../img/small icon.png);
+	background-position: right;
+	position: relative;
+	/*padding-bottom: 10px;*/
+	border-bottom: 1px solid #e5e5e5;
+}
+
+.logo {
+	float: left;
+	margin: 35px 35px 0 15px;
+}
+
+.nav {
+	float: left;
+	margin-top: 40px;
+}
+
+.nav li {
+	float: left;
+	padding-right: 15px;
+	font-size: 16px;
+	/*padding-bottom: 12px;*/
+}
+
+.nav li a{
+	padding-bottom: 14px;
+}
+
+.nav li a:hover {
+	color: #e22835;
+	border-bottom: 2px solid #cb3034;
+}
+
+.nav .li1 {
+	/*position: relative;
+	padding: 0 13px;
+	background-color: #eeeeee;
+	padding: 10px 20px 10px 15px;
+	/*line-height: 40px;
+	margin-right: 10px;
+	
+	border: 1px solid #eeeeee;
+	border-radius: 5px;*/
+	display: block;
+    float: left;
+    padding: 0 13px;
+    margin-top: -10px;
+}
+
+.nav .li1 a{
+    box-sizing: border-box;
+    color: #323232;
+    cursor: pointer;
+    display: block;
+    height: 46px;
+    line-height: 40px;
+    overflow: hidden;
+    padding: 0;
+    position: relative;
+    text-decoration: none;
+    border-bottom: 2px solid transparent;
+    transition: .3s border-color,.3s color;
+}
+.nav .li1 a i{
+	background: url(../img/small_icon.png) no-repeat -103px -81px;
+	position: absolute;
+	display: block;
+    width: 14px;
+    height: 14px;
+    top: 12px;
+    left: 14px;
+}
+.nav .li1 a span{
+	border-radius: 5px;
+    background-color: #eee;
+    padding-left: 36px;
+    padding-right: 18px;
+    display: block;
+}
+	
+.nav .li1 a:hover span {
+	background-color: #b02d2e;
+	color: #FFF;
+}
+.nav .li1 a:hover i{
+	background: url(../img/small_icon.png) no-repeat -103px -112px;
+}
+
+.b{
+	float: right;
+	margin-right: 15px;
+}
+.b .head{
+	
+	margin-top: 13px;
+	
+}
+
+.b .head li{
+	float: left;
+	padding-left: 25px;
+}
+.b .head li a:hover{
+	text-decoration: underline;
+	color: #006ad0;
+}
+.b .search{
+	float: right;
+	height: 40px;
+    position: relative;
+    margin-right: 35px;
+}
+.b .search a{
+	width: 40px;
+    height: 56px;
+}
+.b .search a i{
+	background: url(../img/small_icon.png) no-repeat -39px -70px;
+	position: absolute;
+	display: block;
+    width: 25px;
+    height: 25px;
+    content: "";
+    top: 8px;
+    left: 8px;
+}
+.b .search a i:hover{
+	background: url(../img/small_icon.png) no-repeat -39px -105px;
+}
+            /*头部样式完成*/
