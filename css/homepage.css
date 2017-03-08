@@ -4,7 +4,7 @@
 	overflow: hidden;
 	background: url(../img/small icon.png);
 	background-position: right;
-	position: relative;
+
 	/*padding-bottom: 10px;*/
 	border-bottom: 1px solid #e5e5e5;
 }
@@ -24,6 +24,7 @@
 	padding-right: 15px;
 	font-size: 16px;
 	/*padding-bottom: 12px;*/
+	position: relative;
 }
 
 .nav li a{
@@ -49,6 +50,7 @@
     float: left;
     padding: 0 13px;
     margin-top: -10px;
+    position: relative;
 }
 
 .nav .li1 a{
@@ -89,7 +91,163 @@
 .nav .li1 a:hover i{
 	background: url(../img/small_icon.png) no-repeat -103px -112px;
 }
+   			/*选项卡开始*/
+.y{
+	width: 100%;
+	overflow: hidden;
+	background-color: #f1f1f1;
+	display: none; 
+}
+.y ul{
+	float: left;
+	width: 277px;
+	padding: 30px 10px;
+	margin-right: 5px;
+}
+.y ul:first-child{
+	margin-left: 50px;
+}
+.y ul li:first-child{
+	float: left;
+}
+.y ul li{
+	padding:5px 0;
+	margin-right: 15px;
+	display: block;
+}
+.y ul li a{
+	font-size: 16px;
+}
+.y ul:hover{
+	background-color: #e5e5e5;
+}
+.y ul li a:hover{
+	text-decoration: underline;
+	color: #006ad0;
+}
+.y ul li:last-child{
+	padding: 0 20px;
+	margin-top: 10px;
+}
+.y ul li:last-child a{
+	padding: 5px 0;
+}
+.y ul li:last-child a:hover{
+	background-color: red;
+	color: #fff;
+	text-decoration: none;
+	border-radius: 5px;
+}
+.y ul li:last-child .a1:hover{
+	background: none;
+	color:#006ad0;
+	text-decoration: underline;
+}
 
+.g{
+	width: 100%;
+	overflow: hidden;
+	background-color: #f1f1f1;
+	display: none; 
+}
+.g ul{
+	float: left;
+	width: 180px;
+	padding: 30px 10px;
+	margin-right: 5px;
+}
+}
+.g ul:first-child{
+	margin-left: 50px;
+	text-align: center;
+}
+.g ul li{
+	padding:5px 0;
+	text-align: center;
+}
+.g ul li a{
+	font-size: 16px;
+}
+.g ul li:first-child a{
+	font-size: 20px;
+	color: red;
+}
+.g ul:hover{
+	background-color: #e5e5e5;
+}
+.g ul li:nth-child(3) a:hover{
+	color: #006ad0;
+}
+.g ul li:last-child{
+	margin-top: 10px;
+}
+.g ul li:last-child a{
+	padding: 5px 0;
+}
+.g ul li:last-child a:hover{
+	background-color: red;
+	color: #fff;
+	text-decoration: none;
+	border-radius: 5px;
+}
+
+.h{
+	width: 100%;
+	overflow: hidden;
+	background-color: #f1f1f1;
+	display: none; 
+}
+.h ul{
+	float: left;
+	width: 220px;
+	padding: 30px 5px;
+	margin-right: 5px;
+	height: 355px;
+}
+}
+.h .ul1{
+	margin-left: 50px;
+	/*text-align: center;*/
+}
+.h ul li{
+	padding-top:5px;
+	text-align: left;
+	margin: 5px 0;
+}
+.h ul li:first-child a{
+	font-size: 20px;
+	color: red;
+}
+.h ul:hover{
+	background-color: #e5e5e5;
+}
+.h ul li a:hover{
+	text-decoration: underline;
+	color: #006ad0;
+}
+.h ul li:first-child{
+	margin-bottom: 10px;
+	}
+.h ul li:first-child a:hover{
+	text-decoration: none;
+	color: red;
+}
+.h ul li:last-child a{
+	padding: 5px 0;
+}
+.h ul li:last-child a:hover{
+	background-color: red;
+	color: #fff;
+	text-decoration: none;
+	border-radius: 5px;
+}
+.h ul li:last-child .a2:hover{
+	background: none;
+	color:#006ad0;
+	text-decoration: underline;
+}
+
+   /*选项卡结束*/
 .b{
 	float: right;
 	margin-right: 15px;
@@ -131,4 +289,8 @@
 .b .search a i:hover{
 	background: url(../img/small_icon.png) no-repeat -39px -105px;
 }
-            /*头部样式完成*/
+            /**/
+#lunbo{
+	width: 1263px;
+	height: 540px;
+}

@@ -1,0 +1,241 @@
+#top {
+	width: 100%;
+	margin: 0 auto;
+	overflow: hidden;
+	background: url(../img/small icon.png);
+	background-position: right;
+
+	/*padding-bottom: 10px;*/
+	border-bottom: 1px solid #e5e5e5;
+}
+
+.logo {
+	float: left;
+	margin: 35px 35px 0 15px;
+}
+
+.nav {
+	float: left;
+	margin-top: 40px;
+}
+.nav .sum {
+	position: relative;
+	}
+.nav .sum li {
+	float: left;
+	padding-right: 15px;
+	font-size: 16px;
+	/*padding-bottom: 12px;*/
+}
+
+.nav .sum li a{
+	padding-bottom: 14px;
+}
+
+.nav .sum li a:hover {
+	color: #e22835;
+	border-bottom: 2px solid #cb3034;
+}
+
+.nav .sum .li1 {
+	/*position: relative;
+	padding: 0 13px;
+	background-color: #eeeeee;
+	padding: 10px 20px 10px 15px;
+	/*line-height: 40px;
+	margin-right: 10px;
+	
+	border: 1px solid #eeeeee;
+	border-radius: 5px;*/
+	display: block;
+    float: left;
+    padding: 0 13px;
+    margin-top: -10px;
+    position: relative;
+}
+
+.nav .sum .li1 a{
+    box-sizing: border-box;
+    color: #323232;
+    cursor: pointer;
+    display: block;
+    height: 46px;
+    line-height: 40px;
+    overflow: hidden;
+    padding: 0;
+    position: relative;
+    text-decoration: none;
+    border-bottom: 2px solid transparent;
+    transition: .3s border-color,.3s color;
+}
+.nav .sum .li1 a i{
+	background: url(../img/small_icon.png) no-repeat -103px -81px;
+	position: absolute;
+	display: block;
+    width: 14px;
+    height: 14px;
+    top: 12px;
+    left: 14px;
+}
+.nav .sum .li1 a span{
+	border-radius: 5px;
+    background-color: #eee;
+    padding-left: 36px;
+    padding-right: 18px;
+    display: block;
+}
+	
+.nav .sum .li1 a:hover span {
+	background-color: #b02d2e;
+	color: #FFF;
+}
+
+.nav .sum .li1 a:hover i{
+	background: url(../img/small_icon.png) no-repeat -103px -112px;
+}
+.sum_i{
+	width: 100%;
+	overflow: hidden;
+	border: 1px solid black;
+	background-color: #f1f1f1;
+	display: none;
+}
+.sum li:hover a {
+				display: block;
+			}
+/*.sum_i li dl {
+				width: 100%;
+				overflow: hidden;
+				padding-top: 15px;
+				padding-left: 60px;
+				border-bottom: 1px solid #f0f0f0;
+			}
+.sum li dl a {
+				color: #333333;
+			}
+			
+			.sum li dl a:hover {
+				color: #E4393C;
+				transition: all 0.8s;
+			}
+			
+			.sum li dl dd a {
+				font-weight: normal;
+				font-size: 12px;
+				margin-left: 10px;
+			}
+			
+			.sum li dl dd {
+				padding: 0 5px;
+				float: left;
+				line-height: 24px;
+				height: 24px;
+			}
+			
+			.sum li dl dt {
+				float: left;
+			}
+			
+			.sum li:hover .goods_all {
+				display: block;
+			}
+			
+			.sum li:hover {
+				padding-left: 50px;
+				background: #96281B;
+				width: 170px;
+				transition: all 0.5s;
+			}
+			
+			.sum li dl dd span {
+				width: 1px;
+				height: 12px;
+				display: block;
+				background-color: #333333;
+				float: left;
+				margin: 6px 5px;
+			}*/
+/*#goodsmenu {
+				position: relative;
+			}
+			
+			#goodsmenu li a {
+				font-size: 14px;
+				font-weight: bolder;
+			}
+			
+			#goodsmenu li {
+				width: 190px;
+				height: 30px;
+				background: #C23131;
+				color: #fff;
+				line-height: 30px;
+				font-size: 12px;
+				padding-left: 30px;
+			}
+			
+			#goodsmenu li .goods_all {
+				width: 733px;
+				min-height: 538px;
+				display: none;
+				position: absolute;
+				left: 220px;
+				top: 0;
+				border: 1px solid #E4393C;
+				padding-left: 5px;
+				background: #fff;
+			}
+			
+			#goodsmenu li dl {
+				width: 673px;
+				min-height: 50px;
+				padding-top: 15px;
+				padding-left: 60px;
+				border-bottom: 1px solid #f0f0f0;
+			}
+			
+			#goodsmenu li dl a {
+				color: #333333;
+			}
+			
+			#goodsmenu li dl a:hover {
+				color: #E4393C;
+				transition: all 0.8s;
+			}
+			
+			#goodsmenu li dl dd a {
+				font-weight: normal;
+				font-size: 12px;
+				margin-left: 10px;
+			}
+			
+			#goodsmenu li dl dd {
+				padding: 0 5px;
+				float: left;
+				line-height: 24px;
+				height: 24px;
+			}
+			
+			#goodsmenu li dl dt {
+				float: left;
+			}
+			
+			#goodsmenu li:hover .goods_all {
+				display: block;
+			}
+			
+			#goodsmenu li:hover {
+				padding-left: 50px;
+				background: #96281B;
+				width: 170px;
+				transition: all 0.5s;
+			}
+			
+			#goodsmenu li dl dd span {
+				width: 1px;
+				height: 12px;
+				display: block;
+				background-color: #333333;
+				float: left;
+				margin: 6px 5px;
+			}*/
