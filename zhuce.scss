@@ -1,0 +1,170 @@
+@charset "utf-8";
+#top {
+    width: 100%;
+    margin: 0 auto;
+    overflow: hidden;
+    background-position: right;
+    border-bottom: 1px solid #e5e5e5;
+    .logo {
+        float: left;
+        margin: 20px 0 10px 50px;
+    }
+}
+ /*头部结束*/
+#content{
+    width: 100%;
+    overflow: hidden;
+    margin: 0 auto;
+    .p1{
+    font-size: 24px;
+    color: #ca0b03;
+    margin: 30px 0 25px 300px;  
+    }
+    .box{
+    background-color: #f8f9fb;
+    width: 670px;
+    overflow: hidden;
+    border-radius: 3px;
+    /*margin-bottom: 100px;*/
+    border-top: 10px solid #ca0b03;
+    text-align: center;
+    margin: 0 auto;
+    margin-bottom: 100px;
+        ul{
+        margin-top: 35px;
+            li{
+                /*width:436px;*/
+                margin:0 auto ;
+                /*display: block;*/
+                position: relative;
+                text-align: center;
+                &:first-child{
+                    font-size: 16px;
+                    margin-left: 10px;
+                    text-align: left;
+                    margin-bottom: 10px;
+//                  float: left;
+                }
+                &:last-child{
+                    border-bottom: 2px solid #e5e4e2;
+                    padding-bottom: 20px;
+                }
+                input {
+                    width: 360px;
+                    border: 2px solid #b9babe;
+                    height: 40px;
+                    border-radius: 4px;
+//                  padding-left: 60px;
+                    line-height: 40px;
+                    min-height: 1px;
+                    /*padding-left: 15px;*/
+                    /*padding-right: 15px;*/
+                    margin: 15px 0px;
+                }
+                i{
+                    position: absolute;
+                    width: 35px;
+                    height: 20px;
+                    left:495px;
+                    top: 30px;
+                    background: url(../img/13.jpg) no-repeat ; 
+//                  background-color: red;
+                    display: block;
+                }
+                span{
+                    margin-right: 20px;
+                    font-size: 16px;
+//                  text-align: right;
+//                  float: left;
+                }
+            }
+        }
+    p{
+        margin: 10px 100px 10px 150px;
+        font-size: 16px;
+        text-align: left;
+        line-height: 28px;
+        input{
+            margin-right: 10px;
+//          display: block;
+        }
+    }
+    .p2{
+        margin: 20px 50px 20px 150px;
+        font-size: 16px;
+        text-align: left;
+        line-height: 28px;
+        a{
+            font-size: 16px;
+            &:hover{
+                text-decoration: underline;
+                color: #006ad0;
+            }
+        }
+    }
+    #p3{
+        text-align:left;
+        margin: 0 82px;
+        font-size: 16px;
+        float: left;
+        #testnum{
+            width: 180px;
+            height: 40px;
+            border: 2px solid #b9babe;
+            border-radius: 4px;
+            margin-left: 25px;
+//          float: left;
+        }
+        #num{
+            width: 128px;
+            height: 40px;
+            border: 2px solid #b9babe;
+            border-radius: 4px;
+            display:block;
+            float: right;
+            margin-left: 20px;
+            font-size: 25px;
+            text-align: center;
+            line-height: 40px;
+            font-style: italic;
+        }
+        #replace{
+            float: right;
+            display: block;
+            margin-left: 15px;
+            margin-top: 10px;
+            
+        }
+    }
+    #btn{
+    width: 360px; 
+    background-color: #af2d2d;
+    color: #fff;
+    border-radius: 5px;
+    border: none;
+    padding: 0;
+    height: 40px;
+    line-height: 40px;
+    font-size: 20px;
+    margin-bottom: 40px;
+    margin-top: 20px;
+    border: none;
+    &:hover{
+    background: #cd3333;
+}
+}        
+    }
+    
+}
+#footer{
+    width: 100%;
+    overflow: hidden;
+    background: #e1e1e1;
+    margin: 0 auto;
+    p{
+    font-size: 16px;
+    line-height: 65px;
+    margin-left: 300px;
+    color: #808080;
+} 
+}

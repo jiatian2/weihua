@@ -1,0 +1,28 @@
+#top {
+  width: 100%;
+  overflow: hidden;
+  line-height: 29px;
+  background-color: #fafafa;
+  border-bottom: 1px solid #ededed;
+  z-index: 421; }
+  #top .div1 {
+    float: left;
+    margin-left: 20px; }
+    #top .div1 .li1 span {
+      background: url(../img/sprites3.png) no-repeat 35px 8px;
+      top: 50%;
+      width: 20px;
+      height: 9px;
+      display: inline-block; }
+  #top .div2 {
+    float: right;
+    margin-right: 30px; }
+  #top div li {
+    float: left;
+    padding: 0 10px; }
+    #top div li a {
+      color: #8c8c8c; }
+      #top div li a:hover {
+        color: #ca151e; }
+
+/*# sourceMappingURL=shangcheng.css.map */

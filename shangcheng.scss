@@ -1,0 +1,44 @@
+@charset "utf-8";
+#top{
+    width: 100%;
+    overflow: hidden;
+//  height: 29px;
+    line-height: 29px;
+    background-color: #fafafa;
+    border-bottom: 1px solid #ededed;
+//  position: relative;
+    z-index: 421;
+    .div1{
+        float: left;
+        margin-left: 20px;
+            .li1 span{
+            background: url(../img/sprites3.png) no-repeat 35px 8px;    
+//          position: absolute;
+//          right: 10px;
+            top: 50%;
+//          margin-top: -2px;
+            width: 20px;
+            height: 9px;
+//          line-height: 0;
+            display: inline-block;     
+        }
+    }
+    .div2{
+        float: right;
+        margin-right: 30px;
+    }
+    div{
+       li{
+            float: left;
+            padding: 0 10px;
+            a{
+                color: #8c8c8c;
+                &:hover{
+                    color: #ca151e;
+                }
+            }
+        }
+    
+        }
+    
+}

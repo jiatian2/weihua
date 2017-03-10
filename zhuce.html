@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		<link rel="stylesheet" type="text/css" href="css/style.css"/>
+		<link rel="stylesheet" type="text/css" href="css/zhuce.css"/>
+	</head>
+	<body>
+		<div id="top">
+			<div class="logo">
+				<a href="http://127.0.0.1:8020/weihua/%E9%A6%96%E9%A1%B5.html"><img src="img/logo.png"/></a>
+			</div>
+		</div>
+		<!--头部结束-->
+		
+		<div id="content">
+			<p class="p1">立即注册</p>
+			<div class="box">
+				<ul>
+					<li>现在就开始创建一个华为账号吧，填写以下信息即可。</li>
+					<li><span>邮箱</span><input type="text" maxlength="50" value="" placeholder="" id="userName" ></li>
+					<li><span>密码</span><input id="pwdf" type="password" maxlength="60"  value="" placeholder=""><i></i><p id="pwtx"></p></li>
+					<li><span>&nbsp;&nbsp;&nbsp;&nbsp;姓</span><input type="text" value="" placeholder="" class="placeholder"></li>
+					<li><span>&nbsp;&nbsp;&nbsp;&nbsp;名</span><input  type="text" value="" placeholder="" class="placeholder"></li>
+				</ul>
+				<p><input type="checkbox" value="1" checked="checked">我愿意接收华为为我推介的相关信息</p>
+				<p><input type="checkbox" value="1" checked="checked">我愿意接收华为信任的第三方合作伙伴为我推介的华为相关信息</p>
+				<p class="p2"><i>* 提交此表格表明你同意接受华为的<a href="http://www.huawei.com/cn/privacy-policy">隐私保护条款</a>和<a href="http://www.huawei.com/cn/legal">使用条款.</a></i></p>
+				<!--<p class="p3">验证码<input name="VerificationCode" type="text" value="" class="placeholder"></p>-->
+				<p id="p3">
+					验证码
+					<input type="text" id="testnum"/>
+					
+					<img src="img/shuaxin.jpg" id="replace"/>
+					<span id="num">110a</span>
+				</p>
+				<input type="button" class="update-btn" value="提交" id="btn"/>
+			</div>
+		</div>
+		<!--content完成-->
+		
+		<div id="footer">
+			<p>版权所有 © 华为技术有限公司 1998-2016。保留一切权利。</p>
+		</div>
+		<!--footer结束-->
+		<!--页面完-->
+	</body>
+</html>
+<script src="js/zhuce.js" type="text/javascript" charset="utf-8"></script>
