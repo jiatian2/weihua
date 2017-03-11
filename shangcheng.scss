@@ -1,27 +1,17 @@
 @charset "utf-8";
 #top{
     width: 100%;
-    overflow: hidden;
-//  height: 29px;
+//  overflow: hidden;
+    height: 30px;
     line-height: 29px;
-    background-color: #fafafa;
+    background-color: #fff;
     border-bottom: 1px solid #ededed;
 //  position: relative;
     z-index: 421;
+    margin: 0 auto;
     .div1{
         float: left;
-        margin-left: 20px;
-            .li1 span{
-            background: url(../img/sprites3.png) no-repeat 35px 8px;    
-//          position: absolute;
-//          right: 10px;
-            top: 50%;
-//          margin-top: -2px;
-            width: 20px;
-            height: 9px;
-//          line-height: 0;
-            display: inline-block;     
-        }
+        margin-left: 20px;    
     }
     .div2{
         float: right;
@@ -33,12 +23,210 @@
             padding: 0 10px;
             a{
                 color: #8c8c8c;
+                border-right: solid 1px #8C8C8C;
+                padding-right: 10px;
                 &:hover{
                     color: #ca151e;
                 }
+                span{
+                background: url(../img/sprites3.png) no-repeat; 
+            top: 50%;
+            margin-left: 5px;
+            width: 7px;
+            height: 4px;
+            display: inline-block;
+            background-position: -34px 0;
+            margin: 0 5px 0 10px;
+                }
+            }
+            
+        }
+        
+        .li1{
+            position: relative;
+            padding-top: 4px;
+            padding-bottom: 4px;
+            line-height: 24px;
+            
+            .ul1{
+                width: 90px;
+//              overflow: hidden;
+                height: 106px;
+                display: none;
+                position: absolute;
+                left: -10px;
+                right: 0;
+                top: 29px;
+                padding: 0 10px;
+                background-color: #fff;
+                border: 1px solid #ededed;
+                border-top-color: #fff;
+                li{
+                    float: none;
+                    a{
+                        color: #8c8c8c;
+                        font-size: 12px;
+                        border: none;
+                        &:hover{
+                            color: #ca151e;
+                        }
+                    }
+                }
+            }
+            &:hover{
+                .ul1{
+                    display: block;
+                }
+                a{
+                   color: #ca151e; 
+                   span{
+                     background: url(../img/sprites3.png) no-repeat 0px 0px; 
+                    width: 7px;
+                    height:4px;
+//                  background-color: red;
+                }
+                }
+                
             }
         }
-    
+    }
+}
+//          top结束
+
+#head{
+    width: 100%;
+    overflow: hidden;
+//  height: 112px;
+//  line-height: 29px;
+    background-color: #fff;
+    border-bottom: 1px solid #ededed;
+//  position: relative;
+    z-index: 421;
+    margin: 0 auto;
+    .logo{
+        float: left;
+        margin-left: 20px;
+    }
+}
+
+
+#nav{
+    width: 100%;
+//  overflow: hidden;
+    height: 40px;
+//  line-height: 29px;
+    background-color: #3a3a3a;
+//  position: relative;
+    z-index: 421;
+    margin: 0 auto;
+    li{
+        float: left;
+        padding: 0 20px; 
+//      &:hover{
+//          background-color: #313131;
+//      }
+        a{
+            line-height: 40px;
+            height: 40px;
+            font-size: 14px;
+            color: #FFF;
+            padding-left: 16px; 
         }
-    
+        
+    }
+    .li2{
+        margin-left: 20px;
+        background-color: #c81118; 
+        width: 200px;
+        font-size: 14px;
+        color: #FFF;
+        line-height: 40px;
+        height: 40px;
+        position: relative;
+        &:hover{
+            background: #c81118;
+        }
+        .na1{
+        width: 240px;
+        height: 448px;
+        position: absolute;
+        background-color: #fff;
+        border-top: 0 none;
+        font-size: 0;
+        left: 0px;
+//      overflow: hidden;
+            ul{
+                height: 64px;
+                li{
+                float: none;
+                text-align: left;
+                position: relative;
+                padding: 0;
+                line-height: 20px;
+                h3 {
+                    height: 20px;
+                    a{
+                    color: #333;
+                    }
+                }
+                a{
+                    color: #8c8c8c;
+//                  padding-right:5px; 
+                    &:hover{
+                            color: #ca151e;
+                        }
+                    }
+                    
+                }
+                &:hover{
+                    background-color: #f7f7f7;
+                }
+                .na2{
+//                  display: none;
+                    position: absolute;
+                    left: 240px;
+                    height: 448px;
+                    background-color: #f7f7f7;
+                    top: 0;
+                    width: 440px;
+//                  right:20px;
+                    ul{
+                        li{
+                        width: 220px;
+                        padding: 0 20px;
+                        a{
+                            color: #333;
+                        }
+                        &:hover{
+                            background: #eee;
+                            a{
+                                color: #ca151e;
+                                }
+                            }
+                        }
+                    }
+                    dl{
+                        margin-left: 255px;
+                        margin-right: 50px;
+                        dt{
+                            text-align: center;
+//                          margin: 9px 0 15px;
+                            background-position: 0 50%;
+                            height: 22px;
+                            line-height: 0px;
+                            background: url("../img/bg63.png") scroll repeat-x;
+                            span{
+                            color: #8c8c8c;
+                            text-align: center;
+                            }   
+                        }
+                        dd a{
+                            color: #333;
+                            line-height: 20px;
+                        }
+                    }
+                }
+            }
+        }
+    }
 }
