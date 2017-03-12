@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title></title>
+		<style>
+			*{
+				margin: 0;
+				padding: 0;
+			}
+			ul,li{
+				list-style-type:none;
+			}
+			#wrap{
+				width: 1263px;
+				height: 450px;
+				overflow: hidden;
+				margin: 0 auto;
+				position: relative;
+			}
+			ul#slide{
+				position: absolute;
+				left: 0;
+				top: 0;
+				width: 99999px;
+			}
+			#slide li{
+				float: left;
+				width: 1263px;
+				height: 450px;
+				background: rgba(0,0,0,0.5);
+				font-size: 200px;
+				color: #fff;
+				font-weight: bold;
+				text-align: center;
+				line-height: 450px;
+			}
+			#prev,#next{
+				width:150px;
+				height: 100px;
+				line-height: 100px;
+				color: #fff;
+				font-size: 80px;
+				background: rgba(0,0,0,0.5);
+				position: absolute;
+				top: 200px;
+				text-align: center;
+				text-decoration: none;
+				display: none;
+			}
+			#wrap:hover #prev,#wrap:hover #next{
+				display: block;
+			}
+			/*#prev{
+				left: 0;
+			}
+			#next{
+				right: 0;
+			}*/
+			#list{
+				position: absolute;
+				bottom: 20px;
+				left:600px
+			}
+			#list li{
+				width: 10px;
+				height: 10px;
+				background: #fff;
+				border-radius: 50%;
+				float: left;
+				margin-left: 10px;
+				cursor: pointer;
+			}
+			#list li.active{
+				background: rgba(0,0,0,0);
+				border: 1px solid #fff;
+				border-radius: 50%;
+			}
+		</style>
+	</head>
+	<body>
+		<div id="wrap">
+			<ul id="slide">
+				<li><img src="img/b1.jpg"/></li>
+				<li><img src="img/b2.jpg"/></li>
+				<li><img src="img/b3.jpg"/></li>
+				<li><img src="img/b4.jpg"/></li>
+				<li><img src="img/b5.jpg"/></li>
+				<li><img src="img/b6.jpg"/></li>
+				<li><img src="img/b7.jpg"/></li>
+				
+			</ul>
+			<!--左右按钮-->
+			<!--<a id="prev" href="#">&lt;</a>
+			<a id="next" href="#">&gt;</a>-->
+			<!--下面原点-->
+			<ul id="list">
+				<li class="active"></li><li></li><li></li><li></li><li></li><li></li><li></li>
+			</ul>
+		</div>
+		<script src="js/move.js"></script>
+		<script>
+		//	封装函数获取ID的元素节点，获取样式
+			function getId(str){
+				return document.getElementById(str);
+			}
+			function getStyle(obj,attr){
+				if(obj.currentStyle){
+					return obj.currentStyle[attr];
+				}else{
+					return getComputedStyle(obj,null)[attr];
+				}
+			}
+			
+			var oWrap = getId("wrap");
+			var oSlide = getId("slide");
+			var iWidth = parseInt(getStyle(oWrap,"width"));
+			var oList = getId("list");
+			var oLi = oList.getElementsByTagName("li");
+			var oLen = oLi.length;
+//			var oNext = getId("next");
+//			var oPrev = getId("prev");
+			var m = 0;  //当前第几张图的索引
+			var timer = null;
+			oSlide.innerHTML+=oSlide.innerHTML;
+			//自动轮播
+			function autoPlay(){
+				timer = setInterval(function(){
+					m++;
+					if(m==oLen+1){
+						oSlide.style.left = "0";
+						m=1;
+					}
+	//				oSlide.style.left = (-1)*m*iWidth+"px"; css直接改，没有动画效果
+	//				通过move函数改变left值，当前第几张图的数值×每个的宽度在取负值
+					move(oSlide,{"left":(-1)*m*iWidth+"px"});
+					for(var i=0;i<oLen;i++){
+						oLi[i].className = "";
+					}
+					oLi[m%oLen].className = "active";
+				},1000)
+			}
+			//	调用自动轮播		
+			autoPlay();
+			
+			// 鼠标移上移开清除或开启定时器
+			oWrap.onmouseover = function(){
+				clearInterval(timer);
+			}
+			oWrap.onmouseout = function(){
+				autoPlay();
+			}
+			
+			//下面圆点鼠标移上
+			for(var i=0;i<oLen;i++){
+				oLi[i].index = i;  //存储index属性
+				oLi[i].onmouseover = function(){
+					for(var j=0;j<oLen;j++){
+						oLi[j].className = "";
+					}
+					oLi[this.index].className = "active";
+					m = this.index; //将index复制给m，全局也知道当前是第几张图
+					move(oSlide,{"left":(-1)*m*iWidth+"px"});
+					}
+			}
+		</script>
+	</body>
+</html>

@@ -103,7 +103,7 @@
       background: #c81118; }
     #nav .li2 .na1 {
       width: 240px;
-      height: 448px;
+      height: 450px;
       position: absolute;
       background-color: #fff;
       border-top: 0 none;
@@ -127,10 +127,13 @@
               color: #ca151e; }
         #nav .li2 .na1 ul:hover {
           background-color: #f7f7f7; }
+          #nav .li2 .na1 ul:hover .na2 {
+            display: block; }
         #nav .li2 .na1 ul .na2 {
+          display: none;
           position: absolute;
           left: 240px;
-          height: 448px;
+          height: 450px;
           background-color: #f7f7f7;
           top: 0;
           width: 440px; }
@@ -158,5 +161,291 @@
             #nav .li2 .na1 ul .na2 dl dd a {
               color: #333;
               line-height: 20px; }
+
+#lunbo {
+  width: 1263px;
+  height: 450px;
+  margin: 0 auto; }
+
+#content {
+  width: 100%;
+  overflow: hidden;
+  background-color: #F5F5F5;
+  z-index: 421;
+  margin: 0 auto; }
+  #content .c1 {
+    width: 100%;
+    overflow: hidden;
+    margin: 0 auto; }
+    #content .c1 ul {
+      margin-top: 10px; }
+      #content .c1 ul li {
+        float: left;
+        margin-left: 20px; }
+  #content .c2 {
+    width: 100%;
+    overflow: hidden;
+    margin: 0px auto; }
+    #content .c2 .c2_l {
+      float: left;
+      margin-left: 20px;
+      position: relative; }
+    #content .c2 h2 {
+      color: #3a3a3a;
+      font-size: 22px;
+      padding: 30px 0 15px 0;
+      line-height: 1;
+      margin-left: 20px; }
+    #content .c2 .c2_r {
+      float: right;
+      width: 968px;
+      margin-left: 5px; }
+      #content .c2 .c2_r ul {
+        float: left;
+        background: #FFF;
+        margin-bottom: 10px;
+        margin-left: 10px;
+        position: relative;
+        -webkit-transition: all .2s linear 0s;
+        -moz-transition: all .2s linear 0s;
+        -ms-transition: all .2s linear 0s;
+        -o-transition: all .2s linear 0s;
+        transition: all .2s linear 0s;
+        width: 232px;
+        height: 290px;
+        z-index: 1;
+        text-align: center; }
+        #content .c2 .c2_r ul li img {
+          width: 134px;
+          height: 134px;
+          margin: 30px 0; }
+        #content .c2 .c2_r ul li h3 {
+          font-weight: 400;
+          margin: 16px 20px 2px;
+          overflow: hidden;
+          color: #3a3a3a;
+          display: table-cell;
+          vertical-align: bottom;
+          width: 259px;
+          padding-left: 16px;
+          padding-right: 16px; }
+        #content .c2 .c2_r ul .lia {
+          font-size: 12px;
+          font-weight: 400;
+          margin: 2px 20px 6px;
+          overflow: hidden;
+          text-overflow: ellipsis;
+          white-space: nowrap;
+          color: #a4a4a4; }
+        #content .c2 .c2_r ul .lib {
+          font-size: 14px;
+          font-weight: 400;
+          margin: 0 20px 20px;
+          overflow: hidden;
+          text-overflow: ellipsis;
+          white-space: nowrap;
+          color: #cc0e11; }
+        #content .c2 .c2_r ul:hover {
+          -webkit-transform: translateY(-3px);
+          -moz-transform: translateY(-3px);
+          -ms-transform: translateY(-3px);
+          -o-transform: translateY(-3px);
+          transform: translateY(-3px); }
+      #content .c2 .c2_r .ul2 {
+        position: relative; }
+        #content .c2 .c2_r .ul2 p {
+          position: absolute;
+          width: 60px;
+          height: 60px;
+          right: 40px;
+          top: 120px;
+          z-index: 2; }
+  #content .c3 {
+    width: 100%;
+    overflow: hidden;
+    margin: 0px auto;
+    position: relative; }
+    #content .c3 h2 {
+      color: #3a3a3a;
+      font-size: 22px;
+      padding: 30px 0 15px 0;
+      line-height: 1;
+      margin-left: 20px; }
+    #content .c3 .c3_a {
+      width: 9999px;
+      height: 290px;
+      position: relative;
+      left: 0px; }
+      #content .c3 .c3_a ul {
+        float: left;
+        background: #FFF;
+        margin-left: 5px;
+        -webkit-transition: all .2s linear 0s;
+        -moz-transition: all .2s linear 0s;
+        -ms-transition: all .2s linear 0s;
+        -o-transition: all .2s linear 0s;
+        transition: all .2s linear 0s;
+        width: 217px;
+        height: 290px;
+        z-index: 1;
+        text-align: center; }
+        #content .c3 .c3_a ul li img {
+          width: 134px;
+          height: 134px;
+          margin: 30px 0; }
+        #content .c3 .c3_a ul li h3 {
+          font-weight: 400;
+          margin: 16px 20px 2px;
+          overflow: hidden;
+          color: #3a3a3a;
+          display: table-cell;
+          vertical-align: bottom;
+          width: 259px;
+          padding-left: 16px;
+          padding-right: 16px; }
+        #content .c3 .c3_a ul .lia {
+          font-size: 12px;
+          font-weight: 400;
+          margin: 2px 20px 6px;
+          overflow: hidden;
+          text-overflow: ellipsis;
+          white-space: nowrap;
+          color: #a4a4a4; }
+        #content .c3 .c3_a ul .lib {
+          font-size: 14px;
+          font-weight: 400;
+          margin: 0 20px 20px;
+          overflow: hidden;
+          text-overflow: ellipsis;
+          white-space: nowrap;
+          color: #cc0e11; }
+        #content .c3 .c3_a ul:hover {
+          -webkit-transform: translateY(-3px);
+          -moz-transform: translateY(-3px);
+          -ms-transform: translateY(-3px);
+          -o-transform: translateY(-3px);
+          transform: translateY(-3px); }
+
+.box {
+  overflow: hidden;
+  margin-left: 20px;
+  width: 100%; }
+
+#prev, #next {
+  width: 23px;
+  height: 75px;
+  line-height: 75px;
+  color: #fff;
+  background: #f0f0f0;
+  position: absolute;
+  top: 50%;
+  text-align: center;
+  text-decoration: none;
+  z-index: 999; }
+  #prev span, #next span {
+    display: block;
+    margin: 28px auto;
+    height: 16px;
+    width: 11px; }
+
+#prev {
+  left: 25px; }
+  #prev span {
+    background: url(../img/icon2.png) scroll no-repeat;
+    background-position: -71px 0; }
+
+#next {
+  right: 0px; }
+  #next span {
+    background: url(../img/icon2.png) scroll no-repeat;
+    background-position: -82px 0; }
+
+.c4 {
+  width: 100%;
+  margin-left: 20px;
+  padding-top: 30px; }
+  .c4 img {
+    width: 100%; }
+
+.c5 {
+  width: 100%;
+  overflow: hidden;
+  margin: 0px auto;
+  position: relative; }
+  .c5 h2 {
+    color: #3a3a3a;
+    font-size: 22px;
+    padding-right: 30px;
+    line-height: 1;
+    margin-left: 20px; }
+  .c5 .c5_t li {
+    float: left;
+    padding: 30px 0 15px 0; }
+    .c5 .c5_t li a {
+      font-size: 16px;
+      margin: 0 10px;
+      color: #a4a4a4; }
+      .c5 .c5_t li a:hover {
+        color: #ca151d; }
+  .c5 .c5_t .liz {
+    float: right; }
+    .c5 .c5_t .liz a {
+      font-size: 18px;
+      color: #666; }
+
+.c5_b {
+  width: 100%;
+  overflow: hidden;
+  margin: 0 20px; }
+  .c5_b ul {
+    float: left;
+    background: #FFF;
+    margin-left: 10px;
+    -webkit-transition: all .2s linear 0s;
+    -moz-transition: all .2s linear 0s;
+    -ms-transition: all .2s linear 0s;
+    -o-transition: all .2s linear 0s;
+    transition: all .2s linear 0s;
+    width: 291px;
+    height: 346px;
+    z-index: 1;
+    text-align: center;
+    margin-bottom: 10px; }
+    .c5_b ul li img {
+      width: 134px;
+      height: 134px;
+      margin: 30px 0; }
+    .c5_b ul li h3 {
+      font-weight: 400;
+      margin: 16px 20px 2px;
+      overflow: hidden;
+      color: #3a3a3a;
+      display: table-cell;
+      vertical-align: bottom;
+      width: 259px;
+      padding-left: 16px;
+      padding-right: 16px; }
+    .c5_b ul .lia {
+      font-size: 12px;
+      font-weight: 400;
+      margin: 2px 20px 6px;
+      overflow: hidden;
+      text-overflow: ellipsis;
+      white-space: nowrap;
+      color: #a4a4a4; }
+    .c5_b ul .lib {
+      font-size: 14px;
+      font-weight: 400;
+      margin: 0 20px 20px;
+      overflow: hidden;
+      text-overflow: ellipsis;
+      white-space: nowrap;
+      color: #cc0e11; }
+    .c5_b ul:hover {
+      -webkit-transform: translateY(-3px);
+      -moz-transform: translateY(-3px);
+      -ms-transform: translateY(-3px);
+      -o-transform: translateY(-3px);
+      transform: translateY(-3px); }
 
 /*# sourceMappingURL=shangcheng.css.map */
