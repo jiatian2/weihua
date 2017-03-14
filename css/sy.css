@@ -39,6 +39,7 @@
     padding: 0 13px;
     margin-top: -10px;
     position: relative;
+    /*width: 105px;*/
 }
 
 .nav li:first-child a{
@@ -81,6 +82,20 @@
 .nav li:first-child a:hover i{
 	background: url(../img/small_icon.png) no-repeat -103px -112px;
 }
+#want{
+	width:100%;
+	margin: 0 20px;
+	overflow: hidden;
+	/*position: absolute;*/
+}	
+#want dl{
+	float: left;
+	width:277px;
+	height: 268px;
+	z-index: 999;
+}
+
+
       /*导航基本样式结束*/
      
 .b{

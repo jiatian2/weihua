@@ -1,0 +1,94 @@
+#box {
+  background: url(../img/bbs_bg.jpg) no-repeat;
+  width: 100%;
+  overflow: hidden;
+  margin: 0 auto; }
+  #box .top {
+    width: 100%;
+    overflow: hidden;
+    margin: 0 auto;
+    padding: 22px 50px; }
+    #box .top .logo {
+      float: left; }
+    #box .top p {
+      float: right;
+      line-height: 14px;
+      padding-right: 100px;
+      padding-top: 24px; }
+      #box .top p a {
+        color: #414343;
+        line-height: 14px; }
+        #box .top p a:first-child {
+          padding-right: 8px;
+          color: #91989e; }
+
+.c {
+  margin-top: 40px;
+  overflow: hidden;
+  padding-bottom: 50px; }
+  .c .c1 {
+    margin: 0 auto;
+    text-align: center;
+    margin: 0 150px; }
+    .c .c1 .p1 {
+      font-size: 42px;
+      line-height: 52px;
+      margin-bottom: 10px;
+      font-family: arial;
+      font-weight: 600; }
+    .c .c1 .p2 {
+      font-size: 24px;
+      font-family: arial;
+      margin-bottom: 65px;
+      color: #808080; }
+  .c .c2 {
+    margin-bottom: 50px;
+    overflow: hidden; }
+    .c .c2 ul {
+      width: 242px;
+      height: 184px;
+      margin-right: 19px;
+      float: left;
+      filter: alpha(opacity=85);
+      background: #fbfbfb;
+      background: rgba(251, 251, 251, 0.8);
+      padding: 38px 15px 20px 45px;
+      -webkit-box-shadow: 8px 8px 35px #d2cecf;
+      -moz-box-shadow: 8px 8px 35px #d2cecf;
+      box-shadow: 0 8px 35px #b9b7b9; }
+      .c .c2 ul li {
+        text-align: left; }
+      .c .c2 ul .li1 {
+        border-left: 5px solid #ff0000;
+        padding-left: 10px; }
+        .c .c2 ul .li1 img {
+          width: 211px;
+          height: 65px; }
+      .c .c2 ul .li2 {
+        font-size: 16px;
+        max-width: 220px;
+        color: #a1a1a1;
+        margin-top: 20px;
+        text-align: left;
+        padding-left: 15px;
+        line-height: 30px;
+        max-height: 90px;
+        overflow: hidden;
+        text-overflow: ellipsis;
+        -webkit-line-clamp: 3; }
+
+.c3 {
+  margin: 20px; }
+
+.footer {
+  height: 60px;
+  width: 100%;
+  bottom: 0;
+  padding: 20px 10px; }
+  .footer p {
+    color: #dbb3b1;
+    text-align: center;
+    margin: 0;
+    line-height: 60px; }
+
+/*# sourceMappingURL=developer.css.map */
