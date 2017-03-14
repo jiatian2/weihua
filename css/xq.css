@@ -1,0 +1,165 @@
+#top {
+  width: 100%;
+  height: 30px;
+  line-height: 29px;
+  background-color: #fff;
+  border-bottom: 1px solid #ededed;
+  z-index: 421;
+  margin: 0 auto; }
+  #top .div1 {
+    float: left;
+    margin-left: 20px; }
+  #top .div2 {
+    float: right;
+    margin-right: 30px; }
+  #top div li {
+    float: left;
+    padding: 0 10px; }
+    #top div li a {
+      color: #8c8c8c;
+      border-right: solid 1px #8C8C8C;
+      padding-right: 10px; }
+      #top div li a:hover {
+        color: #ca151e; }
+      #top div li a span {
+        background: url(../img/sprites3.png) no-repeat;
+        top: 50%;
+        margin-left: 5px;
+        width: 7px;
+        height: 4px;
+        display: inline-block;
+        background-position: -34px 0;
+        margin: 0 5px 0 10px; }
+  #top div .li1 {
+    position: relative;
+    padding-top: 4px;
+    padding-bottom: 4px;
+    line-height: 24px; }
+    #top div .li1 .ul1 {
+      width: 90px;
+      height: 106px;
+      display: none;
+      position: absolute;
+      left: -10px;
+      right: 0;
+      top: 29px;
+      padding: 0 10px;
+      background-color: #fff;
+      border: 1px solid #ededed;
+      border-top-color: #fff; }
+      #top div .li1 .ul1 li {
+        float: none; }
+        #top div .li1 .ul1 li a {
+          color: #8c8c8c;
+          font-size: 12px;
+          border: none; }
+          #top div .li1 .ul1 li a:hover {
+            color: #ca151e; }
+    #top div .li1:hover .ul1 {
+      display: block; }
+    #top div .li1:hover a {
+      color: #ca151e; }
+      #top div .li1:hover a span {
+        background: url(../img/sprites3.png) no-repeat 0px 0px;
+        width: 7px;
+        height: 4px; }
+
+#head {
+  width: 100%;
+  overflow: hidden;
+  background-color: #fff;
+  z-index: 421;
+  margin: 0 auto; }
+  #head .logo {
+    float: left;
+    margin-left: 20px; }
+
+#nav {
+  width: 100%;
+  height: 40px;
+  background-color: #3a3a3a;
+  z-index: 421;
+  margin: 0 auto; }
+  #nav li {
+    float: left;
+    padding: 0 20px; }
+    #nav li a {
+      line-height: 40px;
+      height: 40px;
+      font-size: 14px;
+      color: #FFF;
+      padding-left: 16px; }
+  #nav .li2 {
+    margin-left: 20px;
+    background-color: #c81118;
+    width: 200px;
+    font-size: 14px;
+    color: #FFF;
+    line-height: 40px;
+    height: 40px;
+    position: relative; }
+    #nav .li2:hover .na1 {
+      display: block; }
+    #nav .li2 .na1 {
+      width: 240px;
+      height: 450px;
+      position: absolute;
+      background-color: rgba(0, 0, 0, 0.7);
+      border-top: 0 none;
+      font-size: 0;
+      left: 0px;
+      z-index: 999;
+      display: none; }
+      #nav .li2 .na1 .ull {
+        height: 64px;
+        width: 240px; }
+        #nav .li2 .na1 .ull li {
+          float: none;
+          text-align: left;
+          position: relative;
+          padding: 0;
+          line-height: 20px; }
+          #nav .li2 .na1 .ull li h3 {
+            height: 20px; }
+            #nav .li2 .na1 .ull li h3 a {
+              color: #fff; }
+          #nav .li2 .na1 .ull li a {
+            color: #bbb; }
+        #nav .li2 .na1 .ull:hover {
+          background-color: rgba(0, 0, 0, 0.2); }
+        #nav .li2 .na1 .ull .na2 {
+          position: absolute;
+          left: 240px;
+          height: 450px;
+          background-color: #f7f7f7;
+          top: 0;
+          width: 440px;
+          z-index: 1000; }
+          #nav .li2 .na1 .ull .na2 ul {
+            width: 220px; }
+            #nav .li2 .na1 .ull .na2 ul li {
+              width: 220px;
+              padding: 0 20px; }
+              #nav .li2 .na1 .ull .na2 ul li a {
+                color: #333; }
+              #nav .li2 .na1 .ull .na2 ul li:hover {
+                background: #eee; }
+                #nav .li2 .na1 .ull .na2 ul li:hover a {
+                  color: #ca151e; }
+          #nav .li2 .na1 .ull .na2 dl {
+            margin-left: 255px;
+            margin-right: 50px; }
+            #nav .li2 .na1 .ull .na2 dl dt {
+              text-align: center;
+              background-position: 0 50%;
+              height: 22px;
+              line-height: 0px;
+              background: url("../img/bg63.png") scroll repeat-x; }
+              #nav .li2 .na1 .ull .na2 dl dt span {
+                color: #8c8c8c;
+                text-align: center; }
+            #nav .li2 .na1 .ull .na2 dl dd a {
+              color: #333;
+              line-height: 20px; }
+
+/*# sourceMappingURL=xq.css.map */

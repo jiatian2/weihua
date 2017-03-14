@@ -16,3 +16,14 @@ function getId(str){
 			oImg.onmouseout = function(){
 				move(oImg,{"margin-left":"0px","opacity":"1"});
 			}
+			
+$(".nav ul li").children("a").each(function(i){
+	$(this).mouseenter(function(){
+		$(this).css("border-bottom","2px solid #cb3034");
+	})
+});
+$(".nav ul li").children("a").each(function(i){
+	$(this).mouseleave(function(){
+		$(this).css("border-bottom","");
+	})
+});

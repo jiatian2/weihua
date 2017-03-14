@@ -1,7 +1,8 @@
 #top {
 	width: 100%;
 	margin: 0 auto;
-	overflow: hidden;
+	/*overflow: hidden;*/
+	height: 75px;
 	background-position: right;
 	border-bottom: 1px solid #e5e5e5;
 }
@@ -10,7 +11,10 @@
 	float: left;
 	margin: 35px 35px 0 15px;
 }
+
+
 /*      logo结束*/
+
 .nav {
 	float: left;
 	margin-top: 40px;
@@ -22,9 +26,14 @@
 	font-size: 16px;
 	/*padding-bottom: 12px;*/
 	position: relative;
+	/*height: 40px;*/
 }
 
-.nav li a{
+.nav li:hover #want{
+	display: block;
+}
+
+.nav li a {
 	padding-bottom: 14px;
 }
 
@@ -35,123 +44,184 @@
 
 .nav li:first-child {
 	display: block;
-    float: left;
-    padding: 0 13px;
-    margin-top: -10px;
-    position: relative;
-    /*width: 105px;*/
+	float: left;
+	padding: 0 13px;
+	margin-top: -10px;
+	position: relative;
+	width: 105px;
 }
 
-.nav li:first-child a{
-    box-sizing: border-box;
-    color: #323232;
-    cursor: pointer;
-    display: block;
-    height: 46px;
-    line-height: 40px;
-    overflow: hidden;
-    padding: 0;
-    position: relative;
-    text-decoration: none;
-    border-bottom: 2px solid transparent;
-    transition: .3s border-color,.3s color;
+.nav li:first-child a {
+	box-sizing: border-box;
+	color: #323232;
+	cursor: pointer;
+	display: block;
+	height: 46px;
+	line-height: 40px;
+	overflow: hidden;
+	padding: 0;
+	position: relative;
+	text-decoration: none;
+	border-bottom: 2px solid transparent;
+	transition: .3s border-color, .3s color;
 }
-.nav li:first-child a i{
+
+.nav li:first-child a i {
 	background: url(../img/small_icon.png) no-repeat -103px -81px;
 	position: absolute;
 	display: block;
-    width: 14px;
-    height: 14px;
-    top: 12px;
-    left: 14px;
+	width: 14px;
+	height: 14px;
+	top: 12px;
+	left: 14px;
 }
-.nav li:first-child a span{
+
+.nav li:first-child a span {
 	border-radius: 5px;
-    background-color: #eee;
-    padding-left: 36px;
-    padding-right: 18px;
-    display: block;
+	background-color: #eee;
+	padding-left: 36px;
+	padding-right: 18px;
+	display: block;
 }
-.nav li:first-child a:hover{
+
+/*.nav li a:first-child:hover {
 	border-bottom: 2px solid #cb3034;
-}	
+}*/
+
 .nav li:first-child a:hover span {
 	background-color: #b02d2e;
 	color: #FFF;
 }
-.nav li:first-child a:hover i{
+
+.nav li:first-child a:hover i {
 	background: url(../img/small_icon.png) no-repeat -103px -112px;
 }
-#want{
-	width:100%;
+
+#want {
+	width: 1263px;
 	margin: 0 20px;
 	overflow: hidden;
-	/*position: absolute;*/
-}	
-#want dl{
+	position: absolute;
+	padding: 0px 100px;
+	background-color: #f1f1f1;
+	left: -225px;
+	display: none;
+}
+
+#want dl {
 	float: left;
-	width:277px;
-	height: 268px;
+	width: 277px;
+	height: 218px;
 	z-index: 999;
+	padding-top: 50px;
+	
+}
+#want dl:hover {
+	background-color: #e5e5e5;
+	
+}
+#want dl dt{
+	float: left;
+	height: 220px;
+	margin: 0 15px;
+}
+#want dl  dd{
+	float: left;
+	/*border:1px solid red;*/
+	/*margin-left: 60px;*/
+	width: 108px;
+	text-align: left;
+	
+}
+#want dl dd a{
+	width: 113px;
+	height: 27px;
+    line-height: inherit;
+	
+}
+#want dl dd a:hover{
+	text-decoration: underline;
+	color: #006ad0;
+	
+}
+#want dl:hover .dd1 a{
+    border-radius: 5px;
+    background-color: #b02d2e;
+	color: #FFF;
+    line-height: 24px;
+    height: 24px;
+    padding:0 10px;
+    margin: 5px 0;
+	
 }
 
 
-      /*导航基本样式结束*/
-     
-.b{
+/*导航基本样式结束*/
+
+.b {
 	float: right;
 	margin-right: 15px;
 }
-.b .head{
-	
+
+.b .head {
 	margin-top: 13px;
-	
 }
 
-.b .head li{
+.b .head li {
 	float: left;
 	padding-left: 25px;
 }
-.b .head li a:hover{
+
+.b .head li a:hover {
 	text-decoration: underline;
 	color: #006ad0;
 }
-.b .search{
+
+.b .search {
 	float: right;
 	height: 40px;
-    position: relative;
-    margin-right: 35px;
+	position: relative;
+	margin-right: 35px;
 }
-.b .search a{
+
+.b .search a {
 	width: 40px;
-    height: 56px;
+	height: 56px;
 }
-.b .search a i{
+
+.b .search a i {
 	background: url(../img/small_icon.png) no-repeat -39px -70px;
 	position: absolute;
 	display: block;
-    width: 25px;
-    height: 25px;
-    content: "";
-    top: 8px;
-    left: 8px;
+	width: 25px;
+	height: 25px;
+	content: "";
+	top: 8px;
+	left: 8px;
 }
-.b .search a i:hover{
+
+.b .search a i:hover {
 	background: url(../img/small_icon.png) no-repeat -39px -105px;
 }
-            /*头部结束*/
-#lunbo{
+
+
+/*头部结束*/
+
+#lunbo {
 	width: 1263px;
 	height: 540px;
 }
-          /*轮播结束*/
-         
+
+
+/*轮播结束*/
+
 #banner {
 	width: 100%;
 	margin: 0 auto;
 	overflow: hidden;
 	background: #fffff;
 }
+
 .bt {
 	width: 100%;
 	margin: 0 auto;
@@ -159,379 +229,422 @@
 	margin-top: 30px;
 	margin-bottom: 20px;
 }
-.l{
+
+.l {
 	width: 620px;
-	height:1062px;
+	height: 1062px;
 	float: left;
 	margin-left: 15px;
 	/*position:relative;*/
 	overflow: hidden;
 }
-.l-t{
-	width: 620px;
-	height:700px;
-	/*border:1px solid #fff;*/
-	position:relative;
-	overflow: hidden;
-}	
 
-.l-t span{
+.l-t {
+	width: 620px;
+	height: 700px;
+	/*border:1px solid #fff;*/
+	position: relative;
+	overflow: hidden;
+}
+
+.l-t span {
 	display: block;
 	width: 620px;
 	height: 700px;
 	position: absolute;
-	top:0;
+	top: 0;
 	left: 0;
 	display: none;
 }
-.l-t p{
-   position:absolute;
-   left:20px;bottom:20px;
-   color: #fff;
-   font-size: 36px;
-   }
-.l-t a:hover p{
+
+.l-t p {
+	position: absolute;
+	left: 20px;
+	bottom: 20px;
+	color: #fff;
+	font-size: 36px;
+}
+
+.l-t a:hover p {
 	bottom: 30px;
 	position: absolute;
 }
-.l-t a:hover span{
-	background:#000;
-	filter:alpha(opacity=70);
-	opacity:0.5;
-	transition: .10s border-color,.10s color;
+
+.l-t a:hover span {
+	background: #000;
+	filter: alpha(opacity=70);
+	opacity: 0.5;
+	transition: .10s border-color, .10s color;
 }
-.l-t a:hover span{
-	display:block;
-	}
-#Img{
+
+.l-t a:hover span {
+	display: block;
+}
+
+#Img {
 	width: 620px;
 	height: 700px;
 	/*position: relative;*/
 }
 
-.l-t:hover{
-	  -webkit-transform: translateX(-10px);
-	  -moz-transform: translateX(-10px);
-	  -ms-transform: translateX(-10px);
-	  -o-transform: translateX(-10px);
-	  transform: translateX(-10px);
-	}
-	
-.l-b{
+.l-t:hover {
+	-webkit-transform: translateX(-10px);
+	-moz-transform: translateX(-10px);
+	-ms-transform: translateX(-10px);
+	-o-transform: translateX(-10px);
+	transform: translateX(-10px);
+}
+
+.l-b {
 	width: 620px;
-	height:342px;
-	position:relative;
+	height: 342px;
+	position: relative;
 	margin-top: 20px;
 }
-.l-b span{
+
+.l-b span {
 	display: block;
 	width: 620px;
 	height: 342px;
 	position: absolute;
-	top:0;
+	top: 0;
 	left: 0;
 	display: none;
 }
-.l-b span i{
+
+.l-b span i {
 	font-style: normal;
 	color: #fff;
 	position: absolute;
-	bottom:10px;
+	bottom: 10px;
 	left: 30px;
 	font-size: 16px;
 	line-height: 20px;
 	width: 384px;
 }
-.l-b p{
-   position:absolute;
-   left:30px;
-   bottom:70px;
-   color: #fff;
-   font-size: 30px;
-   width: 384px;
-   }
-.l-b a:hover p{
+
+.l-b p {
+	position: absolute;
+	left: 30px;
+	bottom: 70px;
+	color: #fff;
+	font-size: 30px;
+	width: 384px;
+}
+
+.l-b a:hover p {
 	bottom: 80px;
 	position: absolute;
 }
-.l-b a:hover span{
-	background:#000;
-	filter:alpha(opacity=70);
-	opacity:0.5;
-	transition: .10s border-color,.10s color;
+
+.l-b a:hover span {
+	background: #000;
+	filter: alpha(opacity=70);
+	opacity: 0.5;
+	transition: .10s border-color, .10s color;
 }
 
-.l-b a:hover span{
-	display:block;
-	}
-#Img4{
+.l-b a:hover span {
+	display: block;
+}
+
+#Img4 {
 	width: 620px;
 	height: 342px;
 	/*position: relative;*/
 }
 
-.l-b:hover{
-	  -webkit-transform: translateX(-10px);
-	  -moz-transform: translateX(-10px);
-	  -ms-transform: translateX(-10px);
-	  -o-transform: translateX(-10px);
-	  transform: translateX(-10px);
-	
-	}
-	/*left结束*/
-		
-	
-.r{
+.l-b:hover {
+	-webkit-transform: translateX(-10px);
+	-moz-transform: translateX(-10px);
+	-ms-transform: translateX(-10px);
+	-o-transform: translateX(-10px);
+	transform: translateX(-10px);
+}
+
+
+/*left结束*/
+
+.r {
 	width: 610px;
-	height:700px;
+	height: 700px;
 	float: right;
 	margin-right: 15px;
 	/*border:1px solid #000;*/
 }
-.r-t{
+
+.r-t {
 	width: 610px;
-	height:342px;
+	height: 342px;
 	margin-left: 15px;
 	/*border:1px solid #000;*/
-	position:relative;
+	position: relative;
 	/*margin-top: 20px;*/
 }
-.r-t span{
+
+.r-t span {
 	display: block;
 	width: 610px;
 	height: 342px;
 	position: absolute;
-	top:0;
+	top: 0;
 	left: 0;
 	display: none;
 }
-.r-t span i{
+
+.r-t span i {
 	font-style: normal;
 	color: #fff;
 	position: absolute;
-	bottom:40px;
+	bottom: 40px;
 	left: 30px;
 	font-size: 16px;
 	line-height: 20px;
 	width: 384px;
 }
-.r-t p{
-   position:absolute;
-   left:30px;
-   bottom:70px;
-   color: #fff;
-   font-size: 30px;
-   }
-.r-t a:hover p{
+
+.r-t p {
+	position: absolute;
+	left: 30px;
+	bottom: 70px;
+	color: #fff;
+	font-size: 30px;
+}
+
+.r-t a:hover p {
 	/*top:2px;*/
 	bottom: 80px;
 	position: absolute;
 }
-.r-t a:hover span{
-	background:#000;
-	filter:alpha(opacity=70);
-	opacity:0.5;
-	transition: .10s border-color,.10s color;
+
+.r-t a:hover span {
+	background: #000;
+	filter: alpha(opacity=70);
+	opacity: 0.5;
+	transition: .10s border-color, .10s color;
 }
 
-.r-t a:hover span{
-	display:block;
-	}
-#Img1{
+.r-t a:hover span {
+	display: block;
+}
+
+#Img1 {
 	width: 610px;
 	height: 342px;
 	/*position: relative;*/
 }
 
-.r-t:hover{
-	  -webkit-transform: translateX(-10px);
-	  -moz-transform: translateX(-10px);
-	  -ms-transform: translateX(-10px);
-	  -o-transform: translateX(-10px);
-	  transform: translateX(-10px);
-	
-	}
-	
-.r-b{
+.r-t:hover {
+	-webkit-transform: translateX(-10px);
+	-moz-transform: translateX(-10px);
+	-ms-transform: translateX(-10px);
+	-o-transform: translateX(-10px);
+	transform: translateX(-10px);
+}
+
+.r-b {
 	width: 610px;
-	height:342px;
+	height: 342px;
 	margin-left: 15px;
 	/*border:1px solid #000;*/
-	position:relative;
+	position: relative;
 	margin-top: 16px;
 }
-.r-b span{
+
+.r-b span {
 	display: block;
 	width: 610px;
 	height: 342px;
 	position: absolute;
-	top:0;
+	top: 0;
 	left: 0;
 	display: none;
 }
-.r-b span i{
+
+.r-b span i {
 	font-style: normal;
 	color: #fff;
 	position: absolute;
-	bottom:40px;
+	bottom: 40px;
 	left: 30px;
 	font-size: 16px;
 	line-height: 20px;
 	width: 384px;
 }
-.r-b p{
-   position:absolute;
-   left:30px;
-   bottom:100px;
-   color: #fff;
-   font-size: 30px;
-   }
-.r-b a:hover p{
+
+.r-b p {
+	position: absolute;
+	left: 30px;
+	bottom: 100px;
+	color: #fff;
+	font-size: 30px;
+}
+
+.r-b a:hover p {
 	/*top:2px;*/
 	bottom: 110px;
 	position: absolute;
 }
-.r-b a:hover span{
-	background:#000;
-	filter:alpha(opacity=70);
-	opacity:0.5;
-	transition: .10s border-color,.10s color;
+
+.r-b a:hover span {
+	background: #000;
+	filter: alpha(opacity=70);
+	opacity: 0.5;
+	transition: .10s border-color, .10s color;
 }
 
-.r-b a:hover span{
-	display:block;
-	}
-#Img2{
+.r-b a:hover span {
+	display: block;
+}
+
+#Img2 {
 	width: 610px;
 	height: 342px;
 	/*position: relative;*/
 }
 
-.r-b:hover{
-	  -webkit-transform: translateX(-10px);
-	  -moz-transform: translateX(-10px);
-	  -ms-transform: translateX(-10px);
-	  -o-transform: translateX(-10px);
-	  transform: translateX(-10px);
-	
-	}
-	
-.r-c{
+.r-b:hover {
+	-webkit-transform: translateX(-10px);
+	-moz-transform: translateX(-10px);
+	-ms-transform: translateX(-10px);
+	-o-transform: translateX(-10px);
+	transform: translateX(-10px);
+}
+
+.r-c {
 	width: 610px;
-	height:342px;
+	height: 342px;
 	margin-left: 15px;
 	/*border:1px solid #000;*/
-	position:relative;
+	position: relative;
 	margin-top: 20px;
 }
-.r-c span{
+
+.r-c span {
 	display: block;
 	width: 610px;
 	height: 342px;
 	position: absolute;
-	top:0;
+	top: 0;
 	left: 0;
 	display: none;
 }
-.r-c span i{
+
+.r-c span i {
 	font-style: normal;
 	color: #fff;
 	position: absolute;
-	bottom:40px;
+	bottom: 40px;
 	left: 30px;
 	font-size: 16px;
 	line-height: 20px;
 	width: 384px;
 }
-.r-c p{
-   position:absolute;
-   left:30px;
-   bottom:120px;
-   color: #fff;
-   font-size: 30px;
-   }
-.r-c a:hover p{
+
+.r-c p {
+	position: absolute;
+	left: 30px;
+	bottom: 120px;
+	color: #fff;
+	font-size: 30px;
+}
+
+.r-c a:hover p {
 	/*top:2px;*/
 	bottom: 130px;
 	position: absolute;
 }
-.r-c a:hover span{
-	background:#000;
-	filter:alpha(opacity=70);
-	opacity:0.5;
-	transition: .10s border-color,.10s color;
+
+.r-c a:hover span {
+	background: #000;
+	filter: alpha(opacity=70);
+	opacity: 0.5;
+	transition: .10s border-color, .10s color;
 }
 
-.r-c a:hover span{
-	display:block;
-	}
-#Img3{
+.r-c a:hover span {
+	display: block;
+}
+
+#Img3 {
 	width: 610px;
 	height: 342px;
 	/*position: relative;*/
 }
 
-.r-c:hover{
-	  -webkit-transform: translateX(-10px);
-	  -moz-transform: translateX(-10px);
-	  -ms-transform: translateX(-10px);
-	  -o-transform: translateX(-10px);
-	  transform: translateX(-10px);
-	
-	}
-          /*right结束*/
-        
-.sp{
+.r-c:hover {
+	-webkit-transform: translateX(-10px);
+	-moz-transform: translateX(-10px);
+	-ms-transform: translateX(-10px);
+	-o-transform: translateX(-10px);
+	transform: translateX(-10px);
+}
+
+
+/*right结束*/
+
+.sp {
 	width: 100%;
 	overflow: hidden;
 	margin: 0 auto;
 	text-align: center;
-	
 }
-.sp img{
+
+.sp img {
 	width: 100%;
 	overflow: hidden;
 }
-.a3{
+
+.a3 {
 	position: relative;
 	display: block;
 	text-align: center;
 	margin: 0 15px;
 }
-.p1{
+
+.p1 {
 	position: absolute;
 	font-size: 40px;
-    margin: 0px auto;
-    text-align: center;
-    margin-top: 60px;
-    color: #fff;
-    top:30px;
-    z-index: 99;
-    /*background: red;*/
-    left: 430px;
+	margin: 0px auto;
+	text-align: center;
+	margin-top: 60px;
+	color: #fff;
+	top: 30px;
+	z-index: 99;
+	/*background: red;*/
+	left: 430px;
 }
-	   /*banner结束*/
-.a3 span{
+
+
+/*banner结束*/
+
+.a3 span {
 	display: block;
 	background: url(../img/small_icon.png) no-repeat 10px -280px;
 	position: absolute;
-	left:550px;
+	left: 550px;
 	top: 190px;
 	/*background-color: red;*/
 	/*border: 1px solid red;*/
 	width: 100px;
 	height: 100px;
 	z-index: 99;
-}  
+}
+
+
 /*.a3 span:hover{
 	display: block;
 	background: url(../img/small_icon.png) no-repeat -100px -280px;
 	background-position:10px -280px ;
 	position: absolute;
 }  */
-      /*视频结束*/
-    /*banner结束*/
-   
+
+
+/*视频结束*/
+
+
+/*banner结束*/
+
 #conter {
 	width: 100%;
 	margin: 0px auto;
@@ -539,7 +652,8 @@
 	background: #f5f5f5;
 	margin-top: 20px;
 }
-.news{
+
+.news {
 	float: left;
 	padding: 0 15px;
 	margin-left: 20px;
@@ -548,32 +662,38 @@
 	padding-top: 30px;
 	margin-bottom: 20px;
 }
-.news h2{
+
+.news h2 {
 	/*font-size: 24px;*/
 	margin-bottom: 20px;
 }
-.news h2 a{
+
+.news h2 a {
 	font-size: 24px;
 	/*margin-bottom: 20px;*/
 }
-.news li{
+
+.news li {
 	padding: 5px 0;
 }
-.news li a{
+
+.news li a {
 	/*padding: 5px 0;*/
 	font-size: 16px;
 }
-.news a:hover{
+
+.news a:hover {
 	text-decoration: underline;
 	color: #006ad0;
 }
-.date{
+
+.date {
 	display: block;
 	margin: 8px 0;
 	color: #999;
 }
 
-.activity{
+.activity {
 	float: left;
 	padding: 0 15px;
 	margin-left: 20px;
@@ -582,27 +702,32 @@
 	padding-top: 30px;
 	margin-bottom: 20px;
 }
-.activity h2{
+
+.activity h2 {
 	/*font-size: 24px;*/
 	margin-bottom: 20px;
 }
-.activity h2 a{
+
+.activity h2 a {
 	font-size: 24px;
 	/*margin-bottom: 20px;*/
 }
-.activity li{
+
+.activity li {
 	padding: 5px 0;
 }
-.activity li a{
+
+.activity li a {
 	/*padding: 5px 0;*/
 	font-size: 16px;
 }
-.activity a:hover{
+
+.activity a:hover {
 	text-decoration: underline;
 	color: #006ad0;
 }
 
-.the{
+.the {
 	float: left;
 	padding: 0 15px;
 	margin-left: 20px;
@@ -611,22 +736,28 @@
 	padding-top: 30px;
 	margin-bottom: 20px;
 }
-.the li:first-child{
+
+.the li:first-child {
 	margin-top: 50px;
 }
-.the li{
+
+.the li {
 	padding: 5px 0;
 }
-.the li a{
+
+.the li a {
 	/*padding: 5px 0;*/
 	font-size: 16px;
 }
-.the a:hover{
+
+.the a:hover {
 	text-decoration: underline;
 	color: #006ad0;
 }
-         /*conter结束*/
-        
+
+
+/*conter结束*/
+
 #last {
 	width: 100%;
 	margin: 0px auto;
@@ -634,44 +765,54 @@
 	background: #272727;
 	/*border-bottom: 1px solid #eeeee;*/
 }
-#last ul{
+
+#last ul {
 	float: left;
 	width: 190px;
 	overflow: hidden;
 	padding-top: 30px;
 	margin-bottom: 20px;
 }
-#last ul:first-child{
+
+#last ul:first-child {
 	padding: 0 15px;
-	margin-left: 20px;;
+	margin-left: 20px;
+	;
 	padding-top: 30px;
 	margin-bottom: 20px;
 }
-#last li{
+
+#last li {
 	padding: 2px;
 }
-#last li h3{
+
+#last li h3 {
 	color: #ccc;
 	font-size: 16px;
-	padding-bottom:5px ;
+	padding-bottom: 5px;
 }
 
-#last li a{
+#last li a {
 	color: #ccc;
 }
-#last li a:hover{
+
+#last li a:hover {
 	text-decoration: underline;
 }
-#last ul:last-child li{
+
+#last ul:last-child li {
 	padding: 5px 0;
 }
-#last ul:last-child li:nth-child(2) a{
+
+#last ul:last-child li:nth-child(2) a {
 	/*display: block;*/
-	padding-right:10px;
+	padding-right: 10px;
 	/*float: left;*/
 }
-    /*last结束*/
-   
+
+
+/*last结束*/
+
 #footer {
 	width: 100%;
 	margin: 0px auto;
@@ -679,7 +820,8 @@
 	background: #272727;
 	border-top: 1px solid #424141;
 }
-#footer span{
+
+#footer span {
 	display: block;
 	float: left;
 	color: #ccc;
@@ -687,31 +829,38 @@
 	padding-left: 15px;
 	line-height: 45px;
 }
-#footer span a{
+
+#footer span a {
 	color: #ccc;
-	padding-left:20px ;
+	padding-left: 20px;
 	line-height: 45px;
 }
-#footer ul{
+
+#footer ul {
 	float: right;
 	margin-right: 20px;
 	padding-right: 15px;
 }
-#footer li{
+
+#footer li {
 	float: left;
 	padding: 0 5px;
 	/*margin-right: 5px;*/
 }
-#footer li a{
+
+#footer li a {
 	color: #ccc;
 	line-height: 45px;
 	padding-right: 15px;
 	border-right: 1px solid #ccc;
 }
-#footer a:hover{
+
+#footer a:hover {
 	text-decoration: underline;
 }
-     /*footer结束*/
-    /*页面结束*/
 
 
+/*footer结束*/
+
+
+/*页面结束*/
